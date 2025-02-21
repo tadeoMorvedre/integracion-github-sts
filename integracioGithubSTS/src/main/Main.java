@@ -13,5 +13,9 @@ public class Main {
         System.out.println(objA);
         System.out.println(objB);
         System.out.println(objC);
+
+        // Nuevo objeto agregado
+        ObjectC objC2 = new ObjectC(4, "Antonia", "Almería");
+        System.out.println(objC2);
     }
 }
