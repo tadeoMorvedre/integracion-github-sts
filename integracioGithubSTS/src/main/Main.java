@@ -1,21 +1,23 @@
 package main;
-
 import entities.ObjectA;
 import entities.ObjectB;
 import entities.ObjectC;
-
+import entities.ObjectD;
 public class Main {
-    public static void main(String[] args) {
-        ObjectA objA = new ObjectA(1, "Pepito", "Grillo");
-        ObjectB objB = new ObjectB(2, "Alfredo", 30);
-        ObjectC objC = new ObjectC(3, "Ana", "Valencia");
+ public static void main(String[] args) {
 
-        System.out.println(objA);
-        System.out.println(objB);
-        System.out.println(objC);
+ ObjectA objetoA = new ObjectA(1,"Pepito", "Grillo");
+ ObjectB objetoB = new ObjectB(1,"Alfredo", 25);
+ ObjectC objetoC = new ObjectC(1,"Ana", "Valencia");
 
-        // Nuevo objeto agregado
-        ObjectC objC2 = new ObjectC(4, "Antonia", "Almería");
-        System.out.println(objC2);
-    }
+ System.out.println(objetoA.toString());
+ System.out.println(objetoB.toString());
+ System.out.println(objetoC.toString());
+
+ ObjectC objetoC2 = new ObjectC(2,"Antonia", "Almeria");
+ System.out.println(objetoC2.toString());
+
+ ObjectD objetoD = new ObjectD(1,"Mike","Avenida del paseo maritimo 156","Manises");
+ System.out.println(objetoD.toString());
+ }
 }
